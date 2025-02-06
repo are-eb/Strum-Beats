@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Strums & Beats</title>
+</head>
+
+<body>
+  <header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg container-fluid">
+      <a class="navbar-brand" href="#"><img src="Strum & Beat (1).png" alt="Strums & Beats Logo" class="logo" /></a>
+
+      <div class="d-flex ms-auto align-items-center">
+        <a href="#" id="cart-toggle" class="nav-icon me-3"><i class="ri-shopping-cart-line"></i></a>
+        <a href="#" id="login-toggle" class="nav-icon"><i class="ri-user-line"></i></a>
+
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="ri-arrow-right-up-line"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="ri-arrow-right-up-line"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="ri-arrow-right-up-line"></i>Instruments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="ri-arrow-right-up-line"></i> Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="ri-arrow-right-up-line"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button id="cart-close" class="cart-close">&times;</button>
+    </div>
+    <div class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+      <ul id="cart-list"></ul>
+    </div>
+    <div class="cart-footer">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+    </div>
+  </div>
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero text-center py-5" data-aos="fade-up">
+      <div class="container">
+        <h1>Find Your Perfect Sound</h1>
+        <p>Discover top-quality instruments & accessories for musicians of all levels.</p>
+        <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Service Highlights -->
+    <section class="service-section py-4">
+      <div class="container">
+        <div class="row service-highlights text-center gap-4 gap-md-0">
+          <div class="col-12 col-md-3">
+            <i class="fas fa-headset"></i>
+            <p>Customer Support <br><span>24/7 assistance</span></p>
+          </div>
+          <div class="col-12 col-md-3">
+            <i class="fas fa-lock"></i>
+            <p>Secure Payment <br><span>100% safe checkout</span></p>
+          </div>
+          <div class="col-12 col-md-3">
+            <i class="fas fa-undo"></i>
+            <p>Money Back Guarantee <br><span>30-day returns</span></p>
+          </div>
+          <div class="col-12 col-md-3">
+            <i class="fas fa-truck"></i>
+            <p>Free Shipping <br><span>On orders over $99</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Featured Instruments -->
+    <section class="featured" data-aos="fade-up">
+      <div class="container">
+        <h2>Featured Instruments</h2>
+        <div class="grid">
+          <div class="card" data-aos="flip-left"><img src="" alt="Guitar">
+            <p>Acoustic Guitar</p>
+            <span class="price">$99</span>
+            <button class="add-to-cart" data-name="Acoustic Guitar" data-price="99"> Add to Cart</button>
+          </div>
+          <div class="card" data-aos="flip-left" data-aos-delay="100"><img src="images/drums.jpg" alt="Drums">
+            <p>Drum Set</p>
+          </div>
+          <div class="card" data-aos="flip-left" data-aos-delay="200"><img src="images/keyboard.jpg" alt="Keyboard">
+            <p>Electronic Keyboard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="about bg-gradient py-5 text-white" data-aos="fade-up">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-4 mb-4" data-aos="fade-left">About Us</h2>
+        <p class="lead mb-5 mx-auto" style="max-width: 800px;" data-aos="fade-right">Strums & Beats is dedicated
+          to providing high-quality instruments and accessories to musicians worldwide. We are passionate about
+          empowering creators and ensuring they have the best tools to express their artistry.</p>
+        <a href="#team" class="btn btn-primary btn-lg" data-aos="zoom-in">Meet Our Team</a>
+      </div>
+      <div class="mt-5 row align-items-center" data-aos="fade-up">
+        <div class="col-md-6">
+          <img src="your-image-url.jpg" alt="musical instruments" class="img-fluid rounded shadow-lg"
+            data-aos="flip-left">
+        </div>
+        <div class="col-md-6">
+          <h3 class="h3 mb-4" data-aos="flip-right">Why Choose Us?</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-3" data-aos="fade-up">
+              <i class="fas fa-check-circle fa-lg text-primary mr-3"></i>
+              Premium Quality Products
+            </li>
+            <li class="d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-check-circle fa-lg text-primary mr-3"></i>
+              Affordable Pricing
+            </li>
+            <li class="d-flex align-items-center mb-3" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-check-circle fa-lg text-primary mr-3"></i>
+              Worldwide Shipping
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="display-4">Contact Us</h2>
+        <p class="lead">Have questions? We'd love to hear from you!</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="contact-form p-4 rounded shadow">
+            <form id="contactForm">
+              <div class="form-group mb-3">
+                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="form-group mb-3">
+                <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-glass w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Map -->
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <div class="contact-map rounded shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=..." frameborder="0"
+              style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer" data-aos="fade-up">
+    <div class="container py-5">
+      <div class="row">
+
+        <div class="col-md-3 text-white">
+          <h4 class="nav__logo">
+            <img src="Strum & Beat (1).png" alt="Strums & Beats Logo" class="logo" />
+            STRUMS & BEATS
+          </h4>
+          <p class="mt-2">&copy; 2025 strumsnbeats.com</p>
+        </div>
+
+
+        <div class="col-md-2">
+          <h6 class="text-white">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Instruments</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6 class="text-white">Contact</h6>
+          <p>Email: <a href="mailto:book@hoasenconcert.com">musical@strumsnbeats.com</a></p>
+          <p>Phone: +91 123 456 7890</p>
+          <h6 class="text-white mt-3">Careers</h6>
+        </div>
+
+        <div class="col-md-2">
+          <h6 class="text-white">Policies</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Payment Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h6 class="text-white">Company</h6>
+          <p>Strums & Beats</p>
+          <p>Delhi,India</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/ef16e28e86.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
